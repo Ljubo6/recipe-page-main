@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    /*color*/
+
+    /*Primary*/
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --white-coffee: #E3DDD7;
+    --snow:#FFF7FB;
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --brandy-red: #854632;
+
+    /*typography*/
+    --outfitFontFamily: "Outfit",sans-serif;
+    --youngSerifFontFamily: "Young Serif",serif;
+    --fs-base: 16px;
+
+    --outfit-weight-regular:400;
+    --outfit-weight-semi-bold:600;
+    --outfit-weight-bold:700;
+
+    --young-serif-weight-regular:400;
+
+    /*borders*/
+    --radii-card:24px;
+    --radii-image:12px;
+}
+body{
+    margin: 0;
+    font-family: var(--outfitFontFamily);
+    font-weight: var(--outfit-weight-regular);
+    font-size: var(--fs-base);
+    line-height: 150%;
+    color: var(--wenge-brown);
+    background-color: var(--eggshell);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    line-height: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding-left: 8px;
+    display: flex;
+    gap: 16px;
+}
+p{
+    margin: 0;
+}
+span, .number{
+    font-weight: var(--outfit-weight-bold);
+}
+h1{
+    font-size: 34px;
+    font-family: var(--youngSerifFontFamily);
+    font-weight: var(--young-serif-weight-regular);
+    color: var(--dark-charcoal);
+}
+h2{
+    font-family: var(--youngSerifFontFamily);
+    font-weight: var(--young-serif-weight-regular);
+    color: var(--brandy-red);
+    font-size: 28px;
+}
+h3{
+    font-size: 20px;
+    color: var(--brandy-red);
+    font-weight: var(--outfit-weight-semi-bold);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-coffee);
+}
+.container{
+    min-height: 100vh;
+    padding: 4rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipe{
+    width: 378px;
+    height: auto;
+    background-color: var(--white);
+}
+.top-image{
+    width: 100%;
+    height: 171px;
+    background-image: url("./assets/images/image-omelette.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-content{
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+/*title*/
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/*preparation*/
+
+.preparation{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--snow);
+}
+.preparation-time-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/*ingredients*/
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.ingredients-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.dot-container{
+    width: 16px;
+    display: flex;
+    align-items: center;
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    background-color: var(--brandy-red);
+    border-radius: 50%;
+}
+
+
+
+/*instructions*/
+
+.instructions{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.instructions-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.number{
+    width: 16px;
+    color: var(--brandy-red);
+}
+
+/*nutrition*/
+
+.nutrition{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cell{
+    display: flex;
+    gap: 16px;
+    padding: 0 32px;
+}
+.cell-content{
+    width: 50%;
+    text-align: start;
+}
+
+
+/*media query*/
+
+@media (min-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+    .title{
+        padding: 0;
+    }
+    .recipe{
+        width: 736px;
+        border-radius: var(--radii-card);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px;
+    }
+    .top-image{
+        height: 300px;
+        border-radius: var(--radii-image);
+    }
+}
