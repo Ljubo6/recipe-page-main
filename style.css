@@ -66,19 +66,19 @@ p{
 span, .number{
     font-weight: var(--outfit-weight-bold);
 }
-h1{
+h2{
     font-size: 34px;
     font-family: var(--youngSerifFontFamily);
     font-weight: var(--young-serif-weight-regular);
     color: var(--dark-charcoal);
 }
-h2{
+h3{
     font-family: var(--youngSerifFontFamily);
     font-weight: var(--young-serif-weight-regular);
     color: var(--brandy-red);
     font-size: 28px;
 }
-h3{
+h4{
     font-size: 20px;
     color: var(--brandy-red);
     font-weight: var(--outfit-weight-semi-bold);
